@@ -1,0 +1,84 @@
+
+<html>
+<head>
+<meta charset="utf-8">
+<!-- html for my portofolio -->
+  <div class="main">
+  <h1> My hobbies</h1>
+
+    <link rel="stylesheet" href="styles3.css">
+
+
+
+</head>
+<body>
+
+
+
+
+  <div class="slideshow-container">
+    <div class="mySlides1">
+      <img src="index2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides1">
+      <img src="index3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides1">
+      <img src="computer.jpg" style="width:100%",width="50%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+  </div>
+
+
+  <img src="12.jpg" alt="Girl in a jacket" width="300" height="300">
+   <p>  I have been swimming since I was 6 years old, I have been in competitions since i was a kid. I love being outside in the summer, and swimming is such a stress relief to me.
+ </p>
+ <p> Swiming has lot of benefits and Swimming is well known for being easy on the joints—it’s especially great for someone with a sports injury or lower-back or knee issues. If you still want to work out while injured, swimming can be a great calorie-burning solution. </p>
+ <p> Myy favourite stroke  is breaststroke.  In this stroke the arms and legs work in turn, first  the arms pull,  then the legs kick and the whole body glides forward with arms and legs straight, you push off for the first stroke, he or she stretches out on the water with the thumbs touching the palms facing downwards.
+     I also like butterfly.  In butterfly you hold your legs together and kick, you bring your arms forward and push them upwards and dive back down. </p>
+</div>
+<div class=" top">
+
+   <img src="0.jpg"  width="300" height="300">
+   <p>  I started my first piano classes when I was 10 years old. I fell in love with this instrument.
+ </p>
+ <p> I have a piano in my house and i spend hours practicing and playing the piano.I evem play the piano at my family gatherings. Playing the piano puts me in a happy mood.</p>
+ <p>The sound created by the piano is unlike anything else on the planet. Capable of sounding fleeting and effervescent one instant, and gritty and powerful the next, few other instruments have anything close to the range of the piano – both tonally and dynamically. Of all instruments, the piano is also considered the most similar to the human voice. </p>
+</div>
+
+
+<div class="middle">
+
+  <img src =3.jpg width="300" height="300">
+  <div class= "section">
+  <p> I enjoy reading books, and Reading is an incredibly inexpensive hobby that provides so many benefits. I learn lot from reading and it such a calming moment for me.</p>
+  <p> My parents used to make me read books since I was a kid, and I had to finish a book a day. Now as an adult I read book on a regular and it is one of my favorites hobby.</p> </div>
+</div>
+</div>
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex[no]-1].style.display = "block";
+}
+</script>
+</body>
+</html>

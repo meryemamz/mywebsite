@@ -1,0 +1,112 @@
+
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+
+/**
+
+css page for portfolio
+*/
+
+
+  .middle{
+
+
+      font-size: 20px;
+  }
+
+
+
+h1{
+  color: pink;
+  margin-left: 50%;
+}
+
+
+.center{
+  margin-top: 10%;
+  float:left;
+  font-size: 20px;
+  margin-top: 10%;
+}
+.section{
+  margin-right: 40%;
+}
+.top{
+  top: 50%;
+  float:right;
+  margin-left: 40%;
+  font-size: 20px;
+  margin-top: 10%;
+}
+p{
+  color: black;
+  font-family: Georgia, serif;
+  font-weight: bold;
+}
+
+
+body { /**
+  color fadding background
+
+   */
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, white, red);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}

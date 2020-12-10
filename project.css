@@ -1,0 +1,47 @@
+
+
+#title{
+  color:black;
+
+}
+#tittle2{
+  color:grey;
+  padding-top:0;
+}
+.subtitle{
+  font-size: 10pt;
+  margin:0;
+
+}
+
+
+
+
+.container {
+  border-radius: 5px;
+  background-color: #FFFFE0;
+  padding: 5px;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 25%;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 200px) {
+  .column, input[type=submit] {
+    width: 50%;
+    margin-top: 0;
+  }
